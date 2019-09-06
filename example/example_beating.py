@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 # fit to a1*sin(w1 * x + f1) + a2*sin(w2 * x + f2)
+import sys
+sys.path.append('.')
 
 import numpy as np
 from matplotlib import pyplot as plt
@@ -14,8 +16,7 @@ xdata = np.linspace(-100,100,1000)
 ydata = f(xdata, [1, 1, 0, 1, 0.9, 0])
 
 plt.plot(xdata, ydata, label='data')
-pi2 = 2*np.pi
-bounds=[[0,2],[0,2],[0,np.pi],[0,2],[0,2],[0,np.pi]]
+bounds=[[0,2],[0,2],[0,2*np.pi],[0,2],[0,2],[0,2*np.pi]]
 
 result = annealing.curve_fit(f, xdata, ydata, bounds=bounds)
 

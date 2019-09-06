@@ -29,8 +29,7 @@ xdata = np.linspace(-100,100,1000)
 ydata = f(xdata, [1, 1, 0, 1, 0.9, 0])
 
 plt.plot(xdata, ydata, label='data')
-pi2 = 2*np.pi
-bounds=[[0,2],[0,2],[0,np.pi],[0,2],[0,2],[0,np.pi]]
+bounds=[[0,2],[0,2],[0,2*np.pi],[0,2],[0,2],[0,2*np.pi]]
 
 result = annealing.curve_fit(f, xdata, ydata, bounds=bounds)
 
@@ -42,6 +41,13 @@ plt.grid()
 
 plt.show()
 ```
+
+Or use [scipy.optimize.basinhopping]:
+
+```python
+result = annealing.curve_fit(f, xdata, ydata, method='basinhopping', x0=np.zeros(6))
+```
+
 
 [scipy.optimize.dual_annealing]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html
 [scipy.optimize.basinhopping]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html
