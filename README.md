@@ -33,8 +33,8 @@ bounds=[[0,2],[0,2],[0,2*np.pi],[0,2],[0,2],[0,2*np.pi]]
 
 result = annealing.curve_fit(f, xdata, ydata, bounds=bounds)
 
-pres = result.x
-ydata_res = f(xdata, pres)
+p_opt = result.x # optimal fit parameters
+ydata_res = f(xdata, p_opt)
 plt.plot(xdata, ydata_res, label='fit')
 plt.legend()
 plt.grid()
