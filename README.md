@@ -9,8 +9,7 @@ Instead, this module allows to use the  global optimization routines of scipy li
 Example: 
 -------
 
-Let us fit a sum of two sinus functions, with a total of 6 free parameters:
-$$f(x) = a_1\sin(\omega_1 x + \varphi_1) + a_2\sin(\omega_2 x + \varphi_2)$$$
+Let us fit a sum of two sinus functions, with a total of 6 free parameters.
 
 By default, the curve_fit function will use the scipy.optimize.dual_annealing method to find the global optimum of the curve fitting problem. The dual annealing algorithm requires bounds for the fitting parameters.
 Other global optimization methods like scipy.optimize.basinhopping require a initial guess of the parameters instead.
@@ -22,6 +21,7 @@ from matplotlib import pyplot as plt
 from curve_fit import annealing
 
 def f(x,p):
+    # Sum of two sinus functions
     return p[0]*np.sin(p[1]*x + p[2]) + p[3]*np.sin(p[4]*x+p[5])
 
 
