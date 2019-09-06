@@ -3,7 +3,7 @@ curve_fit.annealing
 
 Most curve fitting algorithms rely on local optimization routines. Initial fit parameters sufficiently close to the optimal parameters are required.
 
-Instead, this module allows to use any Global Optimization routine of [scipy.optimize] for curve fitting.
+Instead, this module allows to use  **Global Optimization** routines of [scipy.optimize] for curve fitting.
 
 
 Example: 
