@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name = "curve_fit.annealing-amba",
-    version = "0.0.2",
+    name = "curve_fit.annealing",
+    version = "0.0.1",
     author = "Simon Reinhardt",
     author_email = "simon.reinhardt@physik.uni-regensburg.de",
     description = "Curve fitting with global optimization routines",

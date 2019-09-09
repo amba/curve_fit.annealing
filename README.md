@@ -5,8 +5,16 @@ Most curve fitting algorithms rely on local optimization routines. These demand 
 
 Instead, this module allows to use  **Global Optimization** routines of [scipy.optimize] to minimize the squared deviation function.
 
+Installation
+------------
 
-Example: 
+This module can be installed from PyPI
+
+```shell
+pip3 install curve_fit.annealing
+```
+
+Example
 -------
 
 Let us fit a beat signal with two sinus functions, with a total of 6 free parameters.
