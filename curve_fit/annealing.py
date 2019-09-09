@@ -1,3 +1,12 @@
+"""
+===================
+curve_fit.annealing
+===================
+
+Most curve fitting algorithms rely on local optimization routines. These demand good estimates of the fit parameters.
+
+Instead, this module allows to use  **Global Optimization** routines of [scipy.optimize] to minimize the squared deviation function.
+"""
 
 from scipy import optimize
 

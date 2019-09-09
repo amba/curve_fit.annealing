@@ -3,3 +3,4 @@
 curve_fit.annealing_amba.egg-info/
 build/
 docs/
+_build/
