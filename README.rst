@@ -8,8 +8,6 @@ scipy.optimize_ to minimize the squared deviation function.
 
 Installation
 ------------------------
-
-.. highlight:: none
                
 This module can be installed from PyPI ::
 
@@ -23,8 +21,6 @@ Let us fit a beat signal with two sinus functions, with a total of 6 free parame
 By default, the ``curve_fit`` function of this module will use the scipy.optimize.dual_annealing_ method to find the global optimum of the curve fitting problem. The dual annealing algorithm requires bounds for the fitting parameters.
 Other global optimization methods like scipy.optimize.basinhopping_ require an initial guess of the parameters instead.
 
-
-.. highlight:: python
 
 ::
    

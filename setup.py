@@ -11,7 +11,7 @@ setuptools.setup(
     description = "Curve fitting with global optimization routines",
     long_description = long_description,
     keywords='curve fitting global optimization simulated annealing',
-    long_description_content_type = "text/x-rst",
+   # long_description_content_type = "text/x-rst",
     url = "https://github.com/amba/curve_fit.annealing",
     packages = setuptools.find_packages(),
     classifiers=[
