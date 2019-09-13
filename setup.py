@@ -5,13 +5,13 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name = "curve_fit.annealing",
-    version = "0.0.2",
+    version = "0.0.3",
     author = "Simon Reinhardt",
     author_email = "simon.reinhardt@physik.uni-regensburg.de",
     description = "Curve fitting with global optimization routines",
     long_description = long_description,
     keywords='curve fitting global optimization simulated annealing',
-    long_description_content_type = "text/markdown",
+    long_description_content_type = "text/x-rst",
     url = "https://github.com/amba/curve_fit.annealing",
     packages = setuptools.find_packages(),
     classifiers=[
