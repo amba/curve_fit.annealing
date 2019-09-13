@@ -67,6 +67,9 @@ This module provides a single function:
  Fit function ``f`` to data with selectable optimization method
  from ``scipy.optimize``.
 
+Parameters:
+~~~~~~~~~~~~~~
+
 f: callable
  The model function, ``f(xdata, p)``. The second argument holds the
  fitting parameters.
