@@ -63,7 +63,7 @@ API
 
 This module provides a single function:
 
-.. function :: curve_fit(f, xdata, ydata, [method='dual_annealing', args, kwargs])
+``curve_fit(f, xdata, ydata, [method='dual_annealing', args, kwargs])``
     Fit function ``f`` to data with selectable optimization method
        from ``scipy.optimize``.
 
