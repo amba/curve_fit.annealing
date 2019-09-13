@@ -20,8 +20,8 @@ Example
 
 Let us fit a beat signal with two sinus functions, with a total of 6 free parameters.
 
-By default, the ``curve_fit`` function of this module will use the ``scipy.optimize.dual_annealing`` method to find the global optimum of the curve fitting problem. The dual annealing algorithm requires bounds for the fitting parameters.
-Other global optimization methods like ``scipy.optimize.basinhopping`` require an initial guess of the parameters instead.
+By default, the ``curve_fit`` function of this module will use the scipy.optimize.dual_annealing_ method to find the global optimum of the curve fitting problem. The dual annealing algorithm requires bounds for the fitting parameters.
+Other global optimization methods like scipy.optimize.basinhopping_ require an initial guess of the parameters instead.
 
 
 .. highlight:: python
@@ -54,7 +54,7 @@ Other global optimization methods like ``scipy.optimize.basinhopping`` require a
    plt.show()
   
 
-Or use ``scipy.optimize.basinhopping`` ::
+Or use scipy.optimize.basinhopping_ ::
 
  result = annealing.curve_fit(f, xdata, ydata, method='basinhopping', x0=np.zeros(6))
 
@@ -94,3 +94,5 @@ parameters.
 
 
 .. _scipy.optimize: https://docs.scipy.org/doc/scipy/reference/optimize.html
+.. _scipy.optimize.dual_annealing: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html#scipy.optimize.dual_annealing
+.. _scipy.optimize.basinhopping: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html#scipy.optimize.basinhopping
