@@ -93,4 +93,4 @@ Return ``OptimizeResult`` object. The ``x`` attribute holds the fitting
 parameters. 
 
 
-.. scipy-optimize: https://docs.scipy.org/doc/scipy/reference/optimize.html
+.. scipy-optimize_: https://docs.scipy.org/doc/scipy/reference/optimize.html
