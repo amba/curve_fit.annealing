@@ -70,27 +70,26 @@ from ``scipy.optimize``.
 
 f: callable
 
-The model function, ``f(xdata, p)``. The second argument holds the
-fitting parameters.
+ The model function, ``f(xdata, p)``. The second argument holds the
+ fitting parameters.
 
 xdata : array_like or object
 
-The independent variable where the data is measured.
-Should usually be an M-length sequence or an (k,M)-shaped array for
-functions with k predictors, but can actually be any object.
+ The independent variable where the data is measured.
+ Should usually be an M-length sequence or an (k,M)-shaped array for
+ functions with k predictors, but can actually be any object.
 
 ydata : array_like
 
-The dependent data, a length M array - nominally ``f(xdata, ...)``.
+ The dependent data, a length M array - nominally ``f(xdata, ...)``.
 
 method : str
 
-scipy.optimize method to use for non-linear least squares minimization.
-Default is 'dual_annealing'.
+ scipy.optimize method to use for non-linear least squares minimization.
+ Default is 'dual_annealing'.
 
 args, kwargs : tuple and dict, optional
-
-Additional arguments passed to the optimization method.
+ Additional arguments passed to the optimization method.
 
 Return ``OptimizeResult`` object. The ``x`` attribute holds the fitting
 parameters. 
