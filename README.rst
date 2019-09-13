@@ -4,7 +4,7 @@ curve_fit.annealing
 Most curve fitting algorithms rely on local optimization routines. These demand good estimates of the fit parameters.
 
 Instead, this module allows to use  **global optimization** routines of
-``scipy.optimize`` (scipy-optimize_) to minimize the squared deviation function.
+``scipy.optimize`` (example_) to minimize the squared deviation function.
 
 Installation
 ------------------------
@@ -93,4 +93,4 @@ Return ``OptimizeResult`` object. The ``x`` attribute holds the fitting
 parameters. 
 
 
-.. scipy-optimize_: https://docs.scipy.org/doc/scipy/reference/optimize.html
+.. _example: https://docs.scipy.org/doc/scipy/reference/optimize.html
