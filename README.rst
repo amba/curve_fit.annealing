@@ -1,12 +1,12 @@
 curve_fit.annealing
-===================
+===============================
 
 Most curve fitting algorithms rely on local optimization routines. These demand good estimates of the fit parameters.
 
 Instead, this module allows to use  **global optimization** routines of ``scipy.optimize`` to minimize the squared deviation function.
 
 Installation
-------------
+------------------------
 
 .. highlight:: none
                
@@ -15,7 +15,7 @@ This module can be installed from PyPI ::
     pip3 install curve_fit.annealing
 
 Example
--------
+---------------
 
 Let us fit a beat signal with two sinus functions, with a total of 6 free parameters.
 
@@ -56,3 +56,29 @@ Other global optimization methods like ``scipy.optimize.basinhopping`` require a
 Or use ``scipy.optimize.basinhopping`` ::
 
  result = annealing.curve_fit(f, xdata, ydata, method='basinhopping', x0=np.zeros(6))
+
+
+API
+-----
+
+.. function :: curve_fit(f, xdata, ydata, [method='dual_annealing', args, kwargs])
+    Fit function ``f`` to data with selectable optimization method
+       from ``scipy.optimize``.
+
+    :param f: callable
+        The model function, ``f(xdata, p)``. The second argument holds the fitting
+        parameters.
+    :param xdata : array_like or object
+        The independent variable where the data is measured.
+        Should usually be an M-length sequence or an (k,M)-shaped array for
+        functions with k predictors, but can actually be any object.
+    :param ydata : array_like
+        The dependent data, a length M array - nominally ``f(xdata, ...)``.
+    :param method : str
+        scipy.optimize method to use for non-linear least squares minimization.
+        Default is 'dual_annealing'.
+    :param args, kwargs : tuple and dict, optional
+        Additional arguments passed to the optimization method.
+
+    Return ``OptimizeResult`` object. The ``x`` attribute holds the fitting
+    parameters. 
