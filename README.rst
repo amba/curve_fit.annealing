@@ -8,6 +8,8 @@ Instead, this module allows to use  **global optimization** routines of ``scipy.
 Installation
 ------------
 
+.. highlight:: none
+               
 This module can be installed from PyPI ::
 
     pip3 install curve_fit.annealing
@@ -20,6 +22,8 @@ Let us fit a beat signal with two sinus functions, with a total of 6 free parame
 By default, the ``curve_fit`` function of this module will use the ``scipy.optimize.dual_annealing`` method to find the global optimum of the curve fitting problem. The dual annealing algorithm requires bounds for the fitting parameters.
 Other global optimization methods like ``scipy.optimize.basinhopping`` require an initial guess of the parameters instead.
 
+
+.. highlight:: python
 
 ::
    
