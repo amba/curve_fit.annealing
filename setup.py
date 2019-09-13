@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name = "curve_fit.annealing",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Simon Reinhardt",
     author_email = "simon.reinhardt@physik.uni-regensburg.de",
     description = "Curve fitting with global optimization routines",
